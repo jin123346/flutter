@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '/components/profile_button.dart';
+import '/components/profile_tabbar.dart';
 import 'package:flutter_profile_app/theme.dart';
 import '/components/profile_count.dart';
 import '/components/profile_header.dart';
@@ -24,14 +26,15 @@ class ProfilePage extends StatelessWidget {
             ProfileHeader(),
             //공백
             const SizedBox(height: 20),
-            ProfileCount(),
             //프로필 카운트 정보
+            ProfileCount(),
             // 공백
             const SizedBox(height: 20),
-
             //프로필 버튼2개
+            ProfileButton(),
 
             //탭바 영역
+            Expanded(child: ProfileTabBar()),
           ],
         ),
         bottomNavigationBar: BottomAppBar(),

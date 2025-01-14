@@ -8,27 +8,32 @@ class ProfileCount extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        _buildCountContainer(50, 'Post'),
-        _buildContour(),
-        _buildCountContainer(10, 'Likes'),
-        _buildContour(),
-        _buildCountContainer(3, 'Share'),
+        _buildInfo(50, 'Post'),
+        _buildLine(),
+        _buildInfo(10, 'Likes'),
+        _buildLine(),
+        _buildInfo(3, 'Share'),
       ],
     );
   }
 
-  Widget _buildCountContainer(int count, String text) {
+  Widget _buildInfo(int count, String text) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
           '${count}',
+          style: TextStyle(fontSize: 15),
         ),
-        Text('${text}'),
+        Text(
+          '${text}',
+          style: TextStyle(fontSize: 15),
+        ),
       ],
     );
   }
 
-  Widget _buildContour() {
+  Widget _buildLine() {
     return Container(
       width: 1,
       height: 40,
