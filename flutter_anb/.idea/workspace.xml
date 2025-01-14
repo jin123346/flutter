@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50d4ec31-cdc7-4105-9d15-1f8fd92a2440" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/background.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/p1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/p2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/p3.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flutter_profile_app/lib/components/profile_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_profile_app/lib/components/profile_button.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flutter_profile_app/lib/components/profile_count.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_profile_app/lib/components/profile_count.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flutter_profile_app/lib/components/profile_tabbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_profile_app/lib/components/profile_tabbar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flutter_profile_app/lib/pages/profile_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_profile_app/lib/pages/profile_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flutter_sirenorder/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_sirenorder/lib/main.dart" afterDir="false" />
-    </list>
+    <list default="true" id="50d4ec31-cdc7-4105-9d15-1f8fd92a2440" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
