@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_anb/components/home/home_body_banner.dart';
+import 'package:flutter_anb/components/home/home_body_popular.dart';
 
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});
@@ -9,6 +10,7 @@ class HomeBody extends StatelessWidget {
     return Column(
       children: [
         HomeBodyBanner(),
+        HomeBodyPopular(),
       ],
     );
   }
