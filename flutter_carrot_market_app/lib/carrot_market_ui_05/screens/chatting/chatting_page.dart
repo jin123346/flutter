@@ -14,12 +14,16 @@ class ChattingPage extends StatelessWidget {
         bottom: AppBarBottomLine(),
         title: Text('채팅'),
       ),
-      body: ListView(
-        children: [
-          //위젯 만들어서 두개 내려줄 생각
-
-          ChatContainer(chatMessageList[0]),
-        ],
+      body: ListView.separated(
+        itemBuilder: (context, index) {
+          return ChatContainer(chatMessageList[index]);
+        },
+        itemCount: chatMessageList.length,
+        separatorBuilder: (context, index) => Divider(
+          height: 0.5,
+          thickness: 0.5,
+          color: Colors.grey.withOpacity(0.5),
+        ),
       ),
     );
   }

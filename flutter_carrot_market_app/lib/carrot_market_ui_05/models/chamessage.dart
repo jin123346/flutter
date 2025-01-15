@@ -30,7 +30,7 @@ List<ChatMessage> chatMessageList = [
     profileImage: 'https://picsum.photos/id/880/200/100?grayscale',
     location: '중동',
     sendDate: '2일전',
-    message: '안녕하세요 지금 다 예약 상태 인가요?',
+    message: '안녕하세요 지금 다 예약 상태 인가요?wwwwwwwwwwwwwwwwwww',
     imageUri: 'https://picsum.photos/id/890/200/100?grayscale',
   )
 ];
