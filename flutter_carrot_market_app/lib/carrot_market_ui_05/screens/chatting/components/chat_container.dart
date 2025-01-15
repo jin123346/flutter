@@ -11,6 +11,7 @@ class ChatContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 85,
+      padding: EdgeInsets.all(20.0),
       decoration: BoxDecoration(
           border: Border(bottom: BorderSide(color: Colors.grey, width: 0.5))),
       child: Row(

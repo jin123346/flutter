@@ -12,6 +12,7 @@ class ChattingPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         bottom: AppBarBottomLine(),
+        title: Text('채팅'),
       ),
       body: ListView(
         children: [
