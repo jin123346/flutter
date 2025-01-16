@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_carrot_market_app/carrot_market_ui_05/models/chamessage.dart';
 
+import '../../../models/chamessage.dart';
 import '../../components/image_container.dart';
 
 class ChatContainer extends StatelessWidget {
