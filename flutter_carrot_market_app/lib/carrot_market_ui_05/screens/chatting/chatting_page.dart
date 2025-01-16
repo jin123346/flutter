@@ -15,12 +15,8 @@ class ChattingPage extends StatelessWidget {
         title: Text('채팅'),
       ),
       body: ListView(
-        children: [
-          //위젯 만들어서 두개 내려줄 생각
-
-          ChatContainer(chatMessageList[0]),
-        ],
-      ),
+          children: List.generate(chatMessageList.length,
+              (index) => ChatContainer(chatMessageList[index]))),
     );
   }
 }

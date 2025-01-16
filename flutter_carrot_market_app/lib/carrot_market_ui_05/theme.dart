@@ -27,6 +27,7 @@ TextTheme textTheme() {
     bodyLarge: GoogleFonts.openSans(fontSize: 16.0, color: Colors.black),
     //부제목 작은 본문텍스트
     bodyMedium: GoogleFonts.openSans(fontSize: 14.0, color: Colors.black),
+
     //중간크기의 제목 스타일
     titleMedium: GoogleFonts.openSans(fontSize: 15.0, color: Colors.black),
   );
