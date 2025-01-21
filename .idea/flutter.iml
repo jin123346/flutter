@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/demo01/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/demo01/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/demo01/build" />
+      <excludeFolder url="file://$MODULE_DIR$/demo02/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/demo02/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/demo02/build" />
+      <excludeFolder url="file://$MODULE_DIR$/demo03/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/demo03/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/demo03/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_anb/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_anb/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_anb/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_carrot_market_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_carrot_market_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_carrot_market_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_dio_ex01/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_dio_ex01/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_dio_ex01/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_list_grid_page/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_list_grid_page/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_list_grid_page/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_login_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_login_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_login_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_profile_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_profile_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_profile_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_recipe_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_recipe_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_recipe_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_shopping_cart_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_shopping_cart_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_shopping_cart_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_sirenorder/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_sirenorder/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_sirenorder/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_stack_text/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_stack_text/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_stack_text/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_store_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_store_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_store_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_store_ex/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_store_ex/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_store_ex/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

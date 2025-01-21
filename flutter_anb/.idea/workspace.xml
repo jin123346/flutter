@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50d4ec31-cdc7-4105-9d15-1f8fd92a2440" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../demo03/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../demo03/test/widget_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flutter_carrot_market_app/lib/carrot_market_ui_05/screens/chatting/chatting_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_carrot_market_app/lib/carrot_market_ui_05/screens/chatting/chatting_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flutter_carrot_market_app/lib/carrot_market_ui_05/screens/chatting/components/chat_container.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../flutter_carrot_market_app/lib/carrot_market_ui_05/screens/chatting/components/chat_container.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,10 +50,10 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "version07",
+    "git-widget-placeholder": "main",
     "io.flutter.reload.alreadyRun": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/workspace/work_flutter/flutter_anb/lib",
+    "last_opened_file_path": "C:/work_space/flutter/flutter_anb",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
