@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_statement/riverpod_v01/_03/book.dart';
 
 //1. 창고에 넣을 테이터 선언
 String myBook = '홍길동전';

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'views/todo_list_view.dart';
 
 void main() {
-  runApp(ProviderScope(child: ToDoApp()));
+  runApp(ToDoApp());
 }
 
 class ToDoApp extends StatelessWidget {
@@ -12,10 +11,15 @@ class ToDoApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('3333');
-
     return MaterialApp(
-      home: ToDoListView(),
+      debugShowCheckedModeBanner: false,
+      home: SafeArea(
+          child: Scaffold(
+        appBar: AppBar(
+          title: const Text('ToDo List'),
+        ),
+        body: TodoListView(),
+      )),
     );
   }
 }

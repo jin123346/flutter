@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_statement/riverpod_v01/_04/book.dart';
+
+import 'book.dart';
 
 void main() {
   runApp(ProviderScope(child: MyApp()));
@@ -21,7 +22,7 @@ class BookPage extends ConsumerWidget {
   const BookPage({super.key});
 
   @override
-  Widget build(BuildContext contex, WidgetRef ref) {
+  Widget build(BuildContext context, WidgetRef ref) {
     print('12222');
     List<String> bookStore = ref.watch(MyBookStoreProvider);
 

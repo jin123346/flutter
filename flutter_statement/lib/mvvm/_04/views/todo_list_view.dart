@@ -1,24 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_statement/common.utils/logger.dart';
 
 import '../models/todo_item.dart';
 import '../view_models/todo_list_view_model.dart';
 
-class TodoListView extends StatefulWidget {
-  const TodoListView({super.key});
+class ToDoListView extends ConsumerWidget {
+  const ToDoListView({super.key});
 
   @override
-  State<TodoListView> createState() => _TodoListViewState();
-}
+  Widget build(BuildContext context, WidgetRef ref) {
+    print('1111111');
+    // 상태관리 -->  동기화 (공유 데이터를 여러 화면서 동일 값을 보장)
+    // 의존성 관리 <-- 강한 소유 관계를 제거 가능
+    TextEditingController _titleController = TextEditingController();
+    final TodoListViewModel viewModel =
+        ref.read(todoListViewModelProvider.notifier);
+    final items = ref.watch(todoListViewModelProvider);
 
-class _TodoListViewState extends State<TodoListView> {
-  final TextEditingController _titleController = TextEditingController();
-  TodoListViewModel _todoListViewModel = TodoListViewModel();
-
-  @override
-  Widget build(BuildContext context) {
-    print('22222');
-
-    _todoListViewModel.initItem(todoItems);
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -34,7 +33,7 @@ class _TodoListViewState extends State<TodoListView> {
                     hintText: 'add to ToDoList ',
                     suffixIcon: IconButton(
                         onPressed: () {
-                          _todoListViewModel.addItems(_titleController.text);
+                          viewModel.addItems(_titleController.text);
                         },
                         icon: Icon(Icons.add))),
               ),
@@ -43,9 +42,9 @@ class _TodoListViewState extends State<TodoListView> {
               ),
               Expanded(
                 child: ListView.builder(
-                  itemCount: _todoListViewModel.items.length,
+                  itemCount: items.length,
                   itemBuilder: (context, index) {
-                    final ToDoItem item = _todoListViewModel.items[index];
+                    final ToDoItem item = items[index];
 
                     print('11111');
                     return ListTile(
@@ -53,9 +52,7 @@ class _TodoListViewState extends State<TodoListView> {
                       trailing: Checkbox(
                         value: item.isDone,
                         onChanged: (value) {
-                          setState(() {
-                            _todoListViewModel.changeToggle(item);
-                          });
+                          viewModel.changeToggle(item);
                         },
                       ),
                     );
