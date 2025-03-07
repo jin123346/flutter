@@ -79,6 +79,50 @@ class SessionGVM extends Notifier<SessionUser> {
       ExceptionHandler.handleException('서버 연결 실패', stackTrace);
     }
   }
+
+  // 자동 로그인
+  //1. 디바이스 기기에 토큰 유무 확인
+  //2. 디바이스 토큰 유무 확인
+  //3. 토큰 유효성 검사
+  //4. SessionUser 상태 갱신
+  //5. dio 헤더에 토큰 다시 설정
+  //6. 게시글 목록 페이지 이동 처리
+  Future<void> autoLogin(String accessToken) async {
+    try {
+      // String? accessToken = await secureStorage.read(key: 'accessToken');
+      //
+      // if (accessToken == null) {
+      //   // ExceptionHandler.handleException('로그인 페이지로 이동됩니다.', StackTrace.current);
+      //   Navigator.popAndPushNamed(mContext, '/login');
+      //   return;
+      // }
+      Map<String, dynamic> resBody =
+          await userRepository.loginWithToken(accessToken);
+
+      //validation 유무
+      if (!resBody['success']) {
+        Navigator.popAndPushNamed(mContext, '/login');
+        return;
+      }
+
+      //다운캐스팅
+      Map<String, dynamic> data = resBody['response'];
+      state = state.copyWith(
+        id: data['id'],
+        username: data['username'],
+        accessToken: accessToken,
+        isLogin: true,
+      );
+
+      //상태변경완료
+      dio.options.headers['Authorization'] = accessToken;
+      Navigator.popAndPushNamed(mContext, '/post/list');
+    } catch (e, stackTrace) {
+      ExceptionHandler.handleException('자동 로그인 중 오류 발생', StackTrace.current);
+      Navigator.popAndPushNamed(mContext, '/login');
+    }
+  }
+
   //로그아웃 행위
 
   //회원등록 행위
@@ -102,6 +146,36 @@ class SessionGVM extends Notifier<SessionUser> {
       Navigator.pushNamed(mContext, '/login');
     } catch (e, stackTrace) {
       ExceptionHandler.handleException('회원가입시 오류가 발생함', stackTrace);
+    }
+  }
+
+  // 로그아웃 행위
+  // 0. 예외 처리
+  // 1. 디바이스 기기에 토큰 삭제
+  // 2. 나의 상태 갱신 -> SessionUser()
+  // 3. dio 전역 객체 헤더 토큰 제거 ==> '' 빈 문자열 처리
+  // 4. 화면 다 파괴하고 LoginPage 페이지 이동 처리
+  Future<void> logout() async {
+    try {
+      // 1
+      await secureStorage.delete(key: "accessToken");
+      // 2
+      state = SessionUser(
+        id: null,
+        username: null,
+        accessToken: null,
+        isLogin: false,
+      );
+      // 3
+      dio.options.headers["Authorization"] = '';
+      // 4
+      Navigator.pushNamedAndRemoveUntil(
+        mContext,
+        '/login',
+        (route) => false,
+      );
+    } catch (e, stackTrace) {
+      ExceptionHandler.handleException('로그아웃 중 오류 발생', stackTrace);
     }
   }
 } //end of sessionGVM

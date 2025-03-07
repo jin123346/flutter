@@ -37,6 +37,19 @@ class UserRepository {
     return (responseBody, accessToken);
   }
 
+  // 자동로그인
+  // 매번 앱을 실행시 로그인 요청하는것은 귀찮고, 사용자 경험면에서도 떨어짐
+  // ---> 서버 --> 인증 사용자 판별 --> 인증--> jwt 토큰
+  // 로그인 --> 로컬 --> jwt 토큰(- 기기에서 토큰 꺼내서 다시 서버로 던저 봐야 함)
+
+  Future<Map<String, dynamic>> loginWithToken(String token) async {
+    Response response = await dio.post('/auto/login',
+        options: Options(headers: {'Authorization': token}));
+
+    Map<String, dynamic> responseBody = response.data;
+    return responseBody;
+  }
+
   Future<(Map<String, dynamic>, String)> readUser(
       Map<String, dynamic> reqData) async {
     Response response = await dio.post('/login', data: reqData);

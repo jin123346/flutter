@@ -4,4 +4,14 @@
 
 //인증여부 --> sessionUser로 진행할 예정
 
-class User {}
+class User {
+  int? id;
+  String? username;
+  String? imgUrl;
+
+  //네임드 생성자  => 미리 생성한 후
+  User.fromMap(Map<String, dynamic> map)
+      : this.id = map["id"],
+        this.username = map["username"],
+        this.imgUrl = map["imgUrl"];
+}
